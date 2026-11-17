@@ -3,7 +3,7 @@
 Site pessoal desenvolvido para o Trabalho Individual A2 (HTML, CSS, JavaScript, Git).
 
 - **Autor:** Robert Santos Pereira — 012A
-- **Repositório:** https://github.com/robert270312-max/curriculo_front
+- **Repositório:** https://github.com/robert270312-max/cp4-entrega
 - **Site publicado:** https://robert270312-max.github.io/curriculo_front/ (verifique após ativar GitHub Pages)
 - **Páginas:** index, currículo, contato (formulário), multimídia, gráficos
 - **Recursos:** HTML semântico, CSS responsivo (Flexbox, Grid, media queries, clamp), tema claro/escuro e mensagens salvas com localStorage, canvas e SVG
