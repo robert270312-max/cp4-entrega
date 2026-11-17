@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio pessoal de Robert Santos Pereira, estudante de Tecnologia da Informação.">
+  <title>Gráficos | Robert Santos Pereira</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/scripts.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <header>
+    <div class="topo">
+      <a class="marca" href="index.html">Robert Santos Pereira</a>
+      <div class="botoes">
+        <button id="btn-tema" type="button" aria-pressed="false">Tema escuro</button>
+        <button id="btn-menu" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      </div>
+      <nav aria-label="Principal">
+        <ul id="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="curriculo.html">Currículo</a></li>
+          <li><a href="formulario.html">Contato</a></li>
+          <li><a href="multimidia.html">Multimídia</a></li>
+          <li><a href="graficos.html" aria-current="page">Gráficos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="conteudo" class="painel-habilidades">
+    <div class="painel-intro">
+      <span class="painel-selo">PORTFÓLIO · TECNOLOGIA</span>
+      <h1>Minhas habilidades em programação</h1>
+      <p class="lead">Tecnologias que estudo e pratico durante minha formação em Análise e Desenvolvimento de Sistemas.</p>
+      <p class="aviso-dados"><strong>Dados ilustrativos:</strong> os percentuais abaixo são exemplos editáveis, não representam avaliações reais de proficiência.</p>
+    </div>
+    <div class="resumo-habilidades" aria-label="Resumo das tecnologias">
+      <article class="cartao resumo-card"><span>Tecnologias apresentadas</span><strong>6</strong><small>Em aprendizado e prática</small></article>
+      <article class="cartao resumo-card"><span>Área de interesse</span><strong>Web</strong><small>HTML, CSS e JavaScript</small></article>
+      <article class="cartao resumo-card"><span>Outros estudos</span><strong>3</strong><small>Python, SQL e C/C++</small></article>
+    </div>
+    <section class="cartao painel-bloco" aria-labelledby="titulo-canvas">
+      <div class="painel-cabecalho"><div><span class="painel-selo">CANVAS + JAVASCRIPT</span><h2 id="titulo-canvas">Comparativo de habilidades</h2><p>Valores ilustrativos para demonstrar visualização de dados.</p></div><span class="painel-tag">Interativo</span></div>
+      <div class="grafico-wrap"><canvas id="grafico" width="900" height="380" role="img" aria-label="Gráfico de barras ilustrativo com seis tecnologias"></canvas></div>
+      <div class="editor-habilidades">
+        <h3>Personalize os valores do exemplo</h3>
+        <p>Arraste os controles para experimentar como o gráfico responde. Os valores ficam salvos apenas neste navegador.</p>
+        <div id="controles-habilidades" class="controles-habilidades"></div>
+        <button id="restaurar-habilidades" type="button">Restaurar exemplos</button>
+      </div>
+    </section>
+    <section class="cartao painel-bloco" aria-labelledby="titulo-svg">
+      <div class="painel-cabecalho"><div><span class="painel-selo">SVG DINÂMICO</span><h2 id="titulo-svg">Distribuição visual</h2><p>Os segmentos acompanham os valores ilustrativos selecionados acima.</p></div></div>
+      <div class="distribuicao"><svg id="grafico-svg" viewBox="0 0 260 260" role="img" aria-labelledby="titulo-grafico-svg"><title id="titulo-grafico-svg">Gráfico circular ilustrativo das tecnologias estudadas</title><circle cx="130" cy="130" r="91" fill="none" stroke="var(--line)" stroke-width="28"/><g id="segmentos-svg" transform="rotate(-90 130 130)"></g><text x="130" y="125" text-anchor="middle" class="svg-centro-numero">6</text><text x="130" y="147" text-anchor="middle" class="svg-centro-legenda">tecnologias</text></svg><div id="legenda-svg" class="legenda-svg" aria-label="Legenda do gráfico"></div></div>
+    </section>
+    <section class="painel-bloco" aria-labelledby="titulo-tecnologias"><h2 id="titulo-tecnologias">Tecnologias em estudo</h2><div class="cartoes tecnologia-cards">
+      <article class="cartao"><h3>HTML5</h3><p>Estrutura semântica, formulários e acessibilidade.</p><span class="etiqueta">Front-end</span></article>
+      <article class="cartao"><h3>CSS3</h3><p>Layouts responsivos com Flexbox, Grid e estilos.</p><span class="etiqueta">Front-end</span></article>
+      <article class="cartao"><h3>JavaScript</h3><p>Interatividade, manipulação do DOM e lógica.</p><span class="etiqueta">Web</span></article>
+      <article class="cartao"><h3>Python</h3><p>Fundamentos de programação e resolução de problemas.</p><span class="etiqueta">Lógica</span></article>
+      <article class="cartao"><h3>SQL</h3><p>Consultas, modelagem e organização de bancos de dados.</p><span class="etiqueta">Dados</span></article>
+      <article class="cartao"><h3>C/C++</h3><p>Estudo de sintaxe, algoritmos e fundamentos.</p><span class="etiqueta">Programação</span></article>
+    </div></section>
+  </main>
+  <footer class="text-center">
+    <p>&copy; 2026 Robert Santos Pereira · Trabalho individual A2 · <a href="https://github.com/robert270312-max/curriculo_front">Repositório no GitHub</a></p>
+  </footer>
+</body>
+</html>
